@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nagwa</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="#" class="home-link">
+                <div class="navbar-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item box">
+                        <div class="bell">bell<span class="red-cyrcle"></span></div>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="dropdown" id="drop-down">
+                            <span>user </span>
+                            <label>
+                  <input type="checkbox">
+                  <ul>
+                    <li val="test">test</li>
+                    <li val="test2">test2</li>
+                  </ul>
+                </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="navbar2">
+        <nav class="navbar-container container">
+            <div class="home-link">
+                <div class="navbar-logo d-flex b-tab active" id="child_1">
+                    <img src="img/child1.png" alt="" class="img-radius img-fluid" width="85" height="85">
+                    <p class="vertical-middle mx-5 font-size-1 font-bold">Maged</p>
+                </div>
+
+                <div class="navbar-logo d-flex b-tab" id="child_2">
+                    <img src="img/child-big.png" alt="" class="img-radius img-fluid" width="85" height="85">
+                    <p class="vertical-middle mx-5 font-size-1 font-bold">Adam</p>
+                </div>
+
+                <div class="navbar-logo d-flex b-tab" id="child_3">
+                    <img src="img/child3.png" alt="" class="img-radius img-fluid" width="85" height="85">
+                    <p class="vertical-middle mx-5 font-size-1 font-bold">Nabil</p>
+                </div>
+            </div>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links childs">
+                    <li class="navbar-item">
+                        <a href="#child_1" class="home-link b-nav-tab active">
+                            <div class="navbar-logo box  d-flex" data-tab="child_1">
+                                <img src="img/child1.png" alt="" class="img-radius img-fluid">
+                                <p class="vertical-middle mx-5">Maged</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="navbar-item ">
+                        <a href="#child_2" class="home-link b-nav-tab ">
+                            <div class="navbar-logo box  d-flex" data-tab="child_2">
+                                <img src="img/child2.png" alt="" class="img-radius img-fluid">
+                                <p class="vertical-middle mx-5">Adam</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="navbar-item ">
+                        <a href="#child_3" class="home-link b-nav-tab">
+                            <div class="navbar-logo box d-flex" data-tab="child_3">
+                                <img src="img/child3.png" alt="" class="img-radius img-fluid">
+                                <p class="vertical-middle mx-5">Nabil</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item ">
+                        <button class="nagwa-btn">Add Child</button>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="d-flex my-5">
+            <div class="brown-box mr-5"></div>
+            <p class="font-size-2 font-bold">Statistics</p>
+        </div>
+        <div class="overflow-scroll chart1">
+            <div id="zc" class="chart--container">
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="d-flex my-5">
+            <div class="brown-box mr-5"></div>
+            <div class="d-flex justify-content-space-between w-100">
+                <div>
+                    <p class="font-size-2 font-bold">Homework</p>
+                </div>
+                <div><button class="nagwa-btn small-padding">All HomeWork</button> </div>
+
+
+            </div>
+
+        </div>
+        <div class="overflow-scroll chart2">
+            <div id="myChart" class="chart--container">
+            </div>
+
+        </div>
+    </section>
+    <section class="container">
+        <div class="d-flex my-5">
+            <div class="brown-box mr-5"></div>
+            <div class="d-flex justify-content-space-between w-100">
+                <div>
+                    <p class="font-size-2 font-bold">Attendence</p>
+                </div>
+                <div>
+                    <p>March.2022</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="box">
+            <div class="overflow-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="student">
+                            <td></td>
+                            <td></td>
+                            <td class="attend-col green-td ">1</td>
+                            <td class="attend-col green-td ">2</td>
+                            <td class="attend-col green-td ">3</td>
+                            <td class="attend-col gray-td ">4</td>
+                            <td class="attend-col gray-td ">5</td>
+                        </tr>
+                        <tr class="student">
+                            <td class="attend-col green-td ">6</td>
+                            <td class="attend-col green-td ">7</td>
+                            <td class="attend-col green-td ">8</td>
+                            <td class="attend-col green-td ">9</td>
+                            <td class="attend-col green-td ">10</td>
+                            <td class="attend-col gray-td">11</td>
+                            <td class="attend-col gray-td">12</td>
+                        </tr>
+                        <tr class="student">
+                            <td class="attend-col pink-td">13</td>
+                            <td class="attend-col green-td">14</td>
+                            <td class="attend-col green-td">15</td>
+                            <td class="attend-col green-td">16</td>
+                            <td class="attend-col green-td">17</td>
+                            <td class="attend-col gray-td">18</td>
+                            <td class="attend-col gray-td">19</td>
+                        </tr>
+                        <tr class="student">
+                            <td class="attend-col pink-td">20</td>
+                            <td class="attend-col green-td">21</td>
+                            <td class="attend-col pink-td">22</td>
+                            <td class="attend-col green-td">23</td>
+                            <td class="attend-col green-td">24</td>
+                            <td class="attend-col gray-td">25</td>
+                            <td class="attend-col gray-td">26</td>
+                        </tr>
+                        <tr class="student">
+                            <td class="attend-col pink-td">27</td>
+                            <td class="attend-col green-td">28</td>
+                            <td class="attend-col green-td">29</td>
+                            <td class="attend-col green-td">30</td>
+                            <td class="attend-col green-td">31</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div class="overflow-scroll">
+            <table class="table-2">
+                <tr>
+                    <td scope="col">
+                        <div class="d-flex my-5">
+                            <div class="brown-box mr-5"></div>
+                            <div class="d-flex justify-content-space-between w-100">
+                                <div>
+                                    <p class="font-size-2 font-bold">Gradebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>1st Semester</td>
+                    <td>2nd Semester</td>
+                    <td>Year Pass Limit</td>
+                    <td>Total Marks</td>
+                </tr>
+                <tr>
+                    <td class="head">Math</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                </tr>
+                <tr>
+                    <td class="head">Math</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Geology</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span class="alarm">30</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Sociology</td>
+                    <td><span span class="alarm">5</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Chemistry</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span class="alarm">19</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Statics</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span class="alarm">8</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Science</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td>
+                        <spanspan class="alarm">10</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td class="head">Arabic</td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+                    <td><span class="alarm">20</span>/<span>50</span></td>
+                    <td><span>40</span>/<span>50</span></td>
+
+                </tr>
+                <tr>
+                    <td colspan="4" class="head">Total Mark</td>
+
+                    <td><span class="sub-total">3000</span>/<span class="total">5000</span></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container text-right">
+            <p>Copyright © 2022 Nagwa All Rights Reserved</p>
+        </div>
+    </footer>
+    </section>
+
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
